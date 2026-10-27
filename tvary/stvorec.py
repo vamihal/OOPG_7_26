@@ -1,5 +1,8 @@
 def obvod(a):
-    return 4 * a
+    from . import obdlznik
 
-def obsah(a):
-    return a * a
+    def obvod(a):
+        return obdlznik.obvod(a, a)
+
+    def obsah(a):
+        return obdlznik.obsah(a, a)
